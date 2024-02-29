@@ -1,0 +1,322 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [{
+            "type": "node",
+            "request": "launch",
+            "name": "run dev tests",
+            "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
+            "args": [
+                "--recursive",
+                "-u",
+                "bdd",
+                "--fgrep",
+                "*end-to-end*",
+                "--timeout",
+                "999999",
+                "--colors",
+                "${workspaceFolder}/test",
+                "--reporter",
+                "mochawesome",
+                "--reporter-options",
+                "reportDir=./reports,reportFilename=coreAPI-report"
+            ],
+            "env": {
+                "NODE_ENV": "dev",
+                "NODE_TLS_REJECT_UNAUTHORIZED": "0"
+            },
+            "internalConsoleOptions": "openOnSessionStart"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "run qa tests",
+            "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
+            "args": [
+                "--recursive",
+                "-u",
+                "bdd",
+                "--fgrep",
+                "*end-to-end*",
+                "--timeout",
+                "999999",
+                "--colors",
+                "${workspaceFolder}/test",
+                "--reporter",
+                "mochawesome",
+                "--reporter-options",
+                "reportDir=./reports,reportFilename=coreAPI-report"
+            ],
+            "env": {
+                "NODE_ENV": "qa",
+                "NODE_TLS_REJECT_UNAUTHORIZED": "0"
+            },
+            "internalConsoleOptions": "openOnSessionStart"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "run qa_us tests",
+            "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
+            "args": [
+                "--recursive",
+                "-u",
+                "bdd",
+                "--fgrep",
+                "*us*",
+                "--timeout",
+                "999999",
+                "--colors",
+                "${workspaceFolder}/test",
+                "--reporter",
+                "mochawesome",
+                "--reporter-options",
+                "reportDir=./reports,reportFilename=coreAPI-report"
+            ],
+            "env": {
+                "NODE_ENV": "qa_us",
+                "NODE_TLS_REJECT_UNAUTHORIZED": "0"
+            },
+            "internalConsoleOptions": "openOnSessionStart"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "run qa_eu tests",
+            "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
+            "args": [
+                "--recursive",
+                "-u",
+                "bdd",
+                "--fgrep",
+                "*eu*",
+                "--timeout",
+                "999999",
+                "--colors",
+                "${workspaceFolder}/test",
+                "--reporter",
+                "mochawesome",
+                "--reporter-options",
+                "reportDir=./reports,reportFilename=coreAPI-report"
+            ],
+            "env": {
+                "NODE_ENV": "qa_eu",
+                "NODE_TLS_REJECT_UNAUTHORIZED": "0"
+            },
+            "internalConsoleOptions": "openOnSessionStart"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "run qa_au tests",
+            "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
+            "args": [
+                "--recursive",
+                "-u",
+                "bdd",
+                "--fgrep",
+                "*au*",
+                "--timeout",
+                "999999",
+                "--colors",
+                "${workspaceFolder}/test",
+                "--reporter",
+                "mochawesome",
+                "--reporter-options",
+                "reportDir=./reports,reportFilename=coreAPI-report"
+            ],
+            "env": {
+                "NODE_ENV": "qa_au",
+                "NODE_TLS_REJECT_UNAUTHORIZED": "0"
+            },
+            "internalConsoleOptions": "openOnSessionStart"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "run qa_ca tests",
+            "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
+            "args": [
+                "--recursive",
+                "-u",
+                "bdd",
+                "--fgrep",
+                "*ca*",
+                "--timeout",
+                "999999",
+                "--colors",
+                "${workspaceFolder}/test",
+                "--reporter",
+                "mochawesome",
+                "--reporter-options",
+                "reportDir=./reports,reportFilename=coreAPI-report"
+            ],
+            "env": {
+                "NODE_ENV": "qa_ca",
+                "NODE_TLS_REJECT_UNAUTHORIZED": "0"
+            },
+            "internalConsoleOptions": "openOnSessionStart"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "run qa_smoke tests",
+            "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
+            "args": [
+                "--recursive",
+                "-u",
+                "bdd",
+                "--fgrep",
+                "*smoke*",
+                "--timeout",
+                "999999",
+                "--colors",
+                "${workspaceFolder}/test",
+                "--reporter",
+                "mochawesome",
+                "--reporter-options",
+                "reportDir=./reports,reportFilename=coreAPI-report"
+            ],
+            "env": {
+                "NODE_ENV": "qa_smoke",
+                "NODE_TLS_REJECT_UNAUTHORIZED": "0"
+            },
+            "internalConsoleOptions": "openOnSessionStart"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "run qa_regression tests",
+            "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
+            "args": [
+                "--recursive",
+                "-u",
+                "bdd",
+                "--fgrep",
+                "*regression*",
+                "--timeout",
+                "999999",
+                "--colors",
+                "${workspaceFolder}/test",
+                "--reporter",
+                "mochawesome",
+                "--reporter-options",
+                "reportDir=./reports,reportFilename=coreAPI-report"
+            ],
+            "env": {
+                "NODE_ENV": "qa_regression",
+                "NODE_TLS_REJECT_UNAUTHORIZED": "0"
+            },
+            "internalConsoleOptions": "openOnSessionStart"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "run prod tests",
+            "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
+            "args": [
+                "--recursive",
+                "-u",
+                "bdd",
+                "--fgrep",
+                "*end-to-end*",
+                "--timeout",
+                "999999",
+                "--colors",
+                "${workspaceFolder}/test",
+                "--reporter",
+                "mochawesome",
+                "--reporter-options",
+                "reportDir=./reports,reportFilename=coreAPI-report"
+            ],
+            "env": {
+                "NODE_ENV": "prod",
+                "NODE_TLS_REJECT_UNAUTHORIZED": "0"
+            },
+            "internalConsoleOptions": "openOnSessionStart"
+        },
+
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "run sso_dev tests",
+            "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
+            "args": [
+                "--recursive",
+                "-u",
+                "bdd",
+                "--fgrep",
+                "*sso*",
+                "--timeout",
+                "999999",
+                "--colors",
+                "${workspaceFolder}/test",
+                "--reporter",
+                "mochawesome",
+                "--reporter-options",
+                "reportDir=./reports,reportFilename=coreAPI-report"
+            ],
+            "env": {
+                "NODE_ENV": "sso_dev",
+                "NODE_TLS_REJECT_UNAUTHORIZED": "0"
+            },
+            "internalConsoleOptions": "openOnSessionStart"
+        },
+
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "run sso_qa tests",
+            "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
+            "args": [
+                "--recursive",
+                "-u",
+                "bdd",
+                "--fgrep",
+                "*sso*",
+                "--timeout",
+                "999999",
+                "--colors",
+                "${workspaceFolder}/test",
+                "--reporter",
+                "mochawesome",
+                "--reporter-options",
+                "reportDir=./reports,reportFilename=coreAPI-report"
+            ],
+            "env": {
+                "NODE_ENV": "sso_qa",
+                "NODE_TLS_REJECT_UNAUTHORIZED": "0"
+            },
+            "internalConsoleOptions": "openOnSessionStart"
+        },
+
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "run sso_prod tests",
+            "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
+            "args": [
+                "--recursive",
+                "-u",
+                "bdd",
+                "--fgrep",
+                "*sso*",
+                "--timeout",
+                "999999",
+                "--colors",
+                "${workspaceFolder}/test",
+                "--reporter",
+                "mochawesome",
+                "--reporter-options",
+                "reportDir=./reports,reportFilename=coreAPI-report"
+            ],
+            "env": {
+                "NODE_ENV": "sso_prod",
+                "NODE_TLS_REJECT_UNAUTHORIZED": "0"
+            },
+            "internalConsoleOptions": "openOnSessionStart"
+        }
+    ]
+}

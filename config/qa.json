@@ -1,0 +1,30 @@
+{
+	"timeout": 60000,
+	"base": {
+		"url": "https://core-api.test.j2noc.com",
+		"proxy": "/internal"
+	},
+	"admin": {
+		"corp_id": 78888,
+		"username": "Avijit",
+		"password": "Test@12345"
+	},
+	"testrail": {
+		"host": "https://testrail.j2noc.com/",
+		"user": "avijit.sannigrahi@j2.com",
+		"password": "testrail"
+	},
+	"db": {
+		"core": {
+			"username": "isppower",
+			"password": "G1ng!rbEef",
+			"connectString": "(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP) (HOST = testdb1.test.j2noc.com) (PORT = 1521)) (CONNECT_DATA = (SID = serv)))",
+			"alias": "isppower"
+		}
+	},
+	"data": {
+		"reseller_id": "78814",
+		"default_id": 302,
+		"api_enabled": "17743cf8-144a-4a05-82a8-5d9b06711ade"
+	}
+}

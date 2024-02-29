@@ -1,0 +1,27 @@
+{
+	"timeout": 60000,
+	"base": {
+		"url": "https://core-api.test.j2noc.com",
+		"proxy": "/internal"
+	},
+
+	"admin": {
+        "corp_id": 78950,
+        "username": "TestAdmin1",
+        "password": "Test@123456"
+    },
+
+	"testrail": {
+		"host": "https://testrail.j2noc.com/",
+		"user": "avijit.sannigrahi@j2.com",
+		"password": "testrail"
+	},
+
+	"db": {
+		"core": {
+			"username": "",
+			"password": "",
+			"connectString": ""
+		}
+	}
+}

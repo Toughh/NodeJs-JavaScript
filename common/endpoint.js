@@ -1,0 +1,48 @@
+const endpoint = {
+    'core': {},
+    'sso': {}
+}
+
+endpoint.core.applications = '/applications'
+endpoint.core.applicationsAppId = '/applications/{app_id}'
+endpoint.core.applicationsAppIdRefresh = '/applications/{app_id}/refresh'
+endpoint.core.applicationsAppIdSecrets = '/applications/{app_id}/secrets'
+endpoint.core.applicationsAppIdSecretsSecretId = '/applications/{app_id}/secrets/{secret_id}'
+endpoint.core.applicationsAppIdDefaults = '/applications/{app_id}/defaults'
+endpoint.core.applicationsAppIdDefaultsDefaultName = '/applications/{app_id}/defaults/{default_name}'
+endpoint.core.users = '/users'
+endpoint.core.applicationsAppIdUsers = '/applications/{app_id}/users'
+endpoint.core.usersCustomerKey = '/users/{customer_key}'
+endpoint.core.usersCustomerKeySSO = '/users/{customer_key}/sso'
+endpoint.core.userFaxNumber = '/users/{fax_number}'
+endpoint.core.usersApiUsersFaxNumber = '/users/api-users/{fax_number}'
+endpoint.core.usersApiUsersUserId = '/users/api-users/{user_id}'
+endpoint.core.usersApiUsersuserIdRefresh = '/users/api-users/{user_id}/refresh'
+endpoint.core.usersApiUsersUserIdDefaults = '/users/api-users/{user_id}/defaults'
+endpoint.core.usersApiUsersUserIdDefaultsDefaultName = '/users/api-users/{user_id}/defaults/{default_name}'
+endpoint.core.numbers = '/numbers'
+endpoint.core.numbersFaxNumbers = '/numbers/{fax_number}'
+endpoint.core.numbersUnassigned = '/numbers/unassigned'
+endpoint.core.numbersAssigned = '/numbers/assigned'
+endpoint.core.applicationAppIdNotification = '/applications/{app_id}/notifications'
+endpoint.core.applicationAppIdNotificationNotificationId = '/applications/{app_id}/notifications/{notification_id}'
+endpoint.core.applicationsAppIdNotificationsNotifyIdAuth = '/applications/{app_id}/notifications/{notify_id}/auth'
+endpoint.core.applicationsAppIdNotificationsNotifyIdAuthNotifyAuthId = '/applications/{app_id}/notifications/{notify_id}/auth/{notify_auth_id}'
+endpoint.core.applicationsDefaultsNames = '/applications/defaults/names'
+endpoint.core.applicationsDefaultsNamesId = '/applications/defaults/names/{id}'
+endpoint.core.health = '/health'
+endpoint.core.citiesAreaCode = '/cities/{area_code}'
+endpoint.core.oauthToken = '/oauth/token'
+endpoint.core.groups = '/groups'
+endpoint.sso.ssoConfigs = '/sso/configs'
+endpoint.sso.ssoConfigsSsoConfigId = '/sso/configs/{sso_config_id}'
+endpoint.sso.ssoUsers = '/sso/users'
+endpoint.sso.ssoUsersSsoUserId = '/sso/users/{sso_user_id}'
+endpoint.sso.ssoGroups = '/sso/groups'
+endpoint.sso.ssoGroupsOauthGroup = '/sso/groups/{oauth_group}'
+endpoint.sso.ssoApplications = '/sso/applications'
+endpoint.sso.ssoApplicationsClientId = '/sso/applications/{client_id}'
+endpoint.sso.ssoApplicationsClientIdResetSecret = '/sso/applications/{client_id}/reset-secret'
+
+
+module.exports = endpoint

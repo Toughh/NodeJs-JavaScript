@@ -1,0 +1,33 @@
+{
+    "timeout": 60000,
+    "base": {
+        "url": "https://core-api.j2noc.com",
+        "proxy": "/internal"
+    },
+
+    "admin": {
+        "corp_id": 86393,
+        "username": "Admin2",
+        "password": "Test@1234567"
+    },
+    
+    "testrail": {
+        "host": "https://testrail.j2noc.com/",
+        "user": "avijit.sannigrahi@j2.com",
+        "password": "testrail"
+    },
+
+    "db": {
+		"core": {
+			"username": "",
+			"password": "",
+			"connectString": ""
+		}
+	},
+
+    "data": {
+        "reseller_id": "86393",
+        "default_id": 61,
+        "api_enabled": "a83a2e36-a7b5-4bb9-8224-ca9a5143ea91"
+    }
+}
